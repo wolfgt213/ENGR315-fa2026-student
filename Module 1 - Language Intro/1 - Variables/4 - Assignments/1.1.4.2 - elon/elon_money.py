@@ -13,10 +13,25 @@ Note that Elon's capital will be $33B.
 """
 
 ### all your code below ###
+purchase_price = 44_000_000_000  # $44 B
+elons_capital = 33_000_000_000  # $33 B
 
+rate_10_year = 3.96  # 3.96%
+rate_20_year = 4.32  # 4.32%
+n1 = 10  # 10 years
+n2 = 20  # 20 years
 
-# final answer for 10-year
-ten_year_final = None
+print("Elon's capital: $" + str(elons_capital))
+print("10-year bond rate: " + str(rate_10_year/100))
+print("Holding period: " + str(n1) + " years")
 
+final_value_10_year = elons_capital * (1 + rate_10_year/100) ** n1
+
+print(f"Final value of 10-year bond: ${final_value_10_year:.2f}")
+# final anser for 10-year
+print("20-year bond rate: " + str(rate_20_year/100))
+print("Holding period: " + str(n2) + " years")
 # final answer for 20-year
-twenty_year_final = None
+
+final_value_20_year = elons_capital * (1 + rate_20_year/100) ** n2
+print(f"Final value of 20-year bond: ${final_value_20_year:.2f}")
